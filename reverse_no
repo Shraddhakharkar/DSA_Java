@@ -1,0 +1,38 @@
+package LogicalProgram;
+
+import java.util.Scanner;
+
+public class Reverse_No {
+
+	public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		System.out.println("Enter a Number:");
+		int num = Sc.nextInt();
+		// 1. Algorithm
+		
+		/*int rev =0;
+		 while(num!=0)
+		 {
+			rev= rev*10 + num%10;
+			 num = num/10;
+		 }
+		 System.out.println("Reverse Number is: "+ rev);*/
+	
+	 // 2. StringBuffer class method
+		/*StringBuffer rev;
+		StringBuffer Sb = new StringBuffer(String.valueOf(num));
+		rev = Sb.reverse();
+		System.out.println("Reverse Number is: "+ rev);*/
+	
+	// StringBuilder method	
+		StringBuilder Sbl= new StringBuilder();
+		Sbl.append(num);
+		 StringBuilder rev1 = Sbl.reverse();
+		 System.out.println("Reverse Number is: "+ rev1);
+		 
+	
+	
+	
+	}
+
+}
